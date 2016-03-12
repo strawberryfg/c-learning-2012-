@@ -1,0 +1,50 @@
+!q1.empty()
+q1.front()
+q1.back()
+q1.push_front()
+q1.push_back()
+list<int> b(a) 
+	a(ary,ary+5)  ary是数组
+c(iter1,iter2) 任意类型容器的迭代器
+
+list
+a.insert(iter,2,13)
+a.insert(iter,14)
+a.insert(iter,c.begin(),c.end())
+a.splice(iter1,b)
+a.splice(iter1,b,iter2,iter3)
+a.splice(iter1,b,iter2)
+a.sort(greater<int>())
+b.sort(greater<int>())
+a.merge(b)
+
+map
+
+map<int,int>::iterator iter=m.find(4);
+iter->first   iter->second
+m.lower_bound() m.upper_bound()
+
+m.erase(iter);
+m.erase(8);
+m.erase(iter1,iter2);
+
+typedef pair<int,int> COUP
+m.insert(COUP(13,14));
+
+typedef map<int,int>::iterator MITER
+typedef pair<MITER,bool> RET
+RET a=m.insert(COUP(12,243));
+MITER b=m.insert(iter1,COUP(23,345))
+m.insert(iter1,iter2)
+.first->second second后要有空格
+map<int,int> m1(m4)
+map<int,int> m1=m4
+
+multiset 开的库还是set
+m.count(13)
+m.equal_range(14)    pair<ITER,ITER>
+
+bool operator < (const student &c) const {}
+
+pair<int,int> Q[100]
+Q[46].first Q[46].second

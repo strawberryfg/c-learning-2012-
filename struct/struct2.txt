@@ -1,0 +1,28 @@
+struct Node{
+	int state[30];
+	int p,flg,t;// 0 交换 1 顺时针 2 逆时针 
+	bool operator <(const Node &X) const{
+		for (int q=0;q<n;q++)
+			if (state[(q+p)%n]!=X.state[(q+X.p)%n]) return state[(q+p)%n]<X.state[(q+X.p)%n];
+		return t<X.t;
+	}spe
+
+const{ 的const表示this(&spe 当前对象的指针)只读不可写 即当前对象spe的state p flg t不可变
+
+#include<cstdio>
+#include<cstdlib>
+#include<iostream>
+using namespace std;
+struct x{
+       int a,b;
+       int f()const{return (*this).a+(*this).b;  }
+       //this->a
+}t;
+int main()
+{
+    t.a=14; t.b=98;
+    cout<<t.f()<<endl;
+    system("pause");
+    return 0;
+}
+

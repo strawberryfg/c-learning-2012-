@@ -1,0 +1,32 @@
+vector<int> a;
+vector<int>::iterator iter=a.begin()+2; //定义迭代器指向容器a的第三个元素（下标从0开始）
+a.insert(iter,6)在第三个元素处插入6 本来是 1 3 5 7 变成1 3 6 5 7
+a.push_back(1);
+a.pop_back(); 从尾部删除
+vector<int>::iterator ite=a.begin()+1;
+a.erase(ite); 删除第2个元素
+a.erase(ite,a.end())删除第1个元素之后的所有元素
+
+cout<<vec.capacity()<<" "<<vec.size();
+
+vector<int> vec(2,1) //2个元素，其初始值为1
+vec.resize(20,5) // 只有当新设置的元素数大于等于当前容量vec.capacity()时才修改容量 且只将新创建的元素初始值设为5
+
+vec.reserve(11111); //预先保留11111个空间
+
+bool f=vec.empty();
+
+int ary[5]={0,23,242,987,31};
+vector<int> vec(ary,ary+5); 用ary[0]到ary[4]初始化vec
+
+int ary[5]={0,23,242,987,31};
+vector<int> vec(ary,ary+5);
+vector<int>::reverse_iterator iter=vec.rbegin();
+for (;iter!=vec.rend();iter++) cout<<*iter<<" ";
+iter=vec.rend()-1;
+for (;iter!=vec.rbegin()-1;iter--) cout<<*iter<<" ";
+
+c.begin() 返回一个迭代器，它指向容器c的第一个元素
+c.end() 返回一个迭代器，它指向容器c的最后一个元素的下一个位置
+c.rbegin() 返回一个逆序迭代器，它指向容器c的最后一个元素
+c.rend() 返回一个逆序迭代器，它指向容器c的第一个元素前面的位置

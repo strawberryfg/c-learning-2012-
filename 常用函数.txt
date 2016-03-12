@@ -1,0 +1,8 @@
+ceil(x) ceil(x)返回的是大于x的最小整数
+floor(x) floor(x)返回的是小于等于x的最大整数
+int(x) 直接舍去小数部分
+四舍五入的函数
+int round(double x)
+{
+   if (x>=0) return int(x+0.5); else return int(x-0.5);
+}
